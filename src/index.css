@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /*  border: 1px solid black; */
+}
+
+/*Since in react all content is inside a div with #root, by default the height is shorten, so, to make it
+take up the entire height we use the following*/
+html,
+body,
+#root {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+p,
+li,
+span,
+label {
+    font-family: "Open Sans", serif;
+}
+
+button {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Nunito", serif;
+}
+
+a {
+    text-decoration: none;
+}
