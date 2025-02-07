@@ -2,15 +2,19 @@ import "./styles.css";
 function Heading() {
     return (
         <>
-            <header>
-                <section className="title-logo-container">
+            <header id="header">
+                <section className="website__logo__name">
                     <img
                         src="../../assets/icons/orange-logo.png"
                         alt="company logo"
                         width="70"
+                        className="website__logo"
                     />
-                    <h1>Unshakable</h1>
+                    <h1 className="website__name">Unshakable</h1>
                 </section>
+
+                <i className="ri-menu-line burger"></i>
+                <input type="checkbox" id="menu-bar" />
             </header>
         </>
     );

@@ -1,5 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("../../styles/color-pallete.css");
+/**NOTE - MOBILE FIRST APPROACH*/
+/*Header styles*/
+#header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    color: var(--indigo-dye);
+}
+
+#header input[type="checkbox"] {
+    display: none;
+}
+
+#header i.burger {
+    font-size: 2.2rem;
+}
+
+/*Header > section styles*/
+.website__logo__name {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.website__logo__name .website__logo {
+    width: min(50px, 50%);
+}
+.website__logo__name .website__name {
+    font-weight: 700;
+    font-size: 1.7rem;
 }
