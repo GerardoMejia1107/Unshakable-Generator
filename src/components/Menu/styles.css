@@ -11,12 +11,14 @@
     left: 0;
     right: 0;
 
+    display: none;
     padding: 1rem;
     background-color: var(--indigo-dye);
 }
 
 /*Classes to control the animations*/
 .navbar__animation {
+    display: block;
     animation: fadeIn 0.4s linear 0s 1 normal both;
     pointer-events: auto;
 }
@@ -29,12 +31,10 @@
 /*Keyframes rules*/
 @keyframes fadeIn {
     from {
-        display: none;
         opacity: 0;
         transform: translateY(-30px);
     }
     to {
-        display: block;
         opacity: 1;
         transform: translateY(0);
     }
@@ -74,6 +74,7 @@
     color: #edf6f9;
 }
 
-.dropdown__item {
+/* .dropdown__item {
     display: none;
 }
+ */
