@@ -4,14 +4,17 @@ function SubMenuItem({ subitem }) {
         <li className="dropdown__item">
             <a href={subitem.link}>
                 <div className="dropdown__item__content">
-                    {subitem.description && (
+                    {subitem.description ? (
                         <>
                             <h4>{subitem.label}</h4>
                             <p>{subitem.description}</p>
                         </>
+                    ) : (
+                        <>
+                            <i className={subitem.icon}></i>
+                            {subitem.label}
+                        </>
                     )}
-                    {<i className={subitem.icon}></i>}
-                    {subitem.label}
                 </div>
             </a>
         </li>

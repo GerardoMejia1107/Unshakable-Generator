@@ -64,7 +64,13 @@ function Menu({ menuVisibility }) {
         >
             <ul>
                 {menuItems.map((item, index) => {
-                    return <MenuItem key={index} item={item} />;
+                    return (
+                        <MenuItem
+                            key={index}
+                            item={item}
+                            menuVisibility={menuVisibility}
+                        />
+                    );
                 })}
             </ul>
         </nav>

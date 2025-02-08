@@ -74,7 +74,31 @@
     color: #edf6f9;
 }
 
-/* .dropdown__item {
+.dropdown {
+    margin-top: 1.5rem;
+    padding-left: 40px;
+
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+
     display: none;
 }
- */
+
+.navbar > ul li.open .dropdown {
+    display: flex;
+}
+
+.navbar > ul > li:nth-child(3) .dropdown__item a div h4 {
+    color: var(--columbia-blue);
+    font-size: 1.15rem;
+}
+
+.navbar > ul > li:nth-child(3) .dropdown__item a div p {
+    font-size: 1rem;
+}
+
+.navbar > ul > li:nth-child(4) .dropdown__item a div {
+    display: flex;
+    gap: 6px;
+}
