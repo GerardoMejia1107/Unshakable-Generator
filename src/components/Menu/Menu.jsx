@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./styles.css";
+import MenuItem from "./MenuItem/MenuItem.jsx";
 
 //Array of object who contains all the menu options and info
 const menuItems = [
@@ -63,39 +64,6 @@ function Menu() {
                 })}
             </ul>
         </nav>
-    );
-}
-
-function MenuItem({ item }) {
-    return (
-        <li className="menu__item">
-            <a href={item.link}>
-                {item.icon && <i className={item.icon}></i>} {item.label}
-            </a>
-
-            {item.submenu && (
-                <ul className="dropdown">
-                    {item.submenu.map((subitem, index) => {
-                        return (
-                            <li key={index} className="dropdown__item">
-                                <a href={subitem.link}>
-                                    <div className="dropdown__item__content">
-                                        {subitem.description && (
-                                            <>
-                                                <h4>{subitem.label}</h4>
-                                                <p>{subitem.description}</p>
-                                            </>
-                                        )}
-                                        {<i className={subitem.icon}></i>}
-                                        {subitem.label}
-                                    </div>
-                                </a>
-                            </li>
-                        );
-                    })}
-                </ul>
-            )}
-        </li>
     );
 }
 
