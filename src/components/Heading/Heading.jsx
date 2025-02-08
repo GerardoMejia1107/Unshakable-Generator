@@ -1,6 +1,12 @@
 import Menu from "../Menu/Menu";
+import { useState } from "react";
 import "./styles.css";
 function Heading() {
+    const [menuVisibility, setMenuVisibility] = useState(false);
+
+    function toogleMenu() {
+        setMenuVisibility(!menuVisibility);
+    }
     return (
         <>
             <header id="header">
@@ -14,9 +20,8 @@ function Heading() {
                     <h1 className="website__name">Unshakable</h1>
                 </section>
 
-                <i className="ri-menu-line burger"></i>
-                <input type="checkbox" id="menu-bar" />
-                <Menu />
+                <i className="ri-menu-line burger" onClick={toogleMenu}></i>
+                <Menu menuVisibility={menuVisibility} />
             </header>
         </>
     );

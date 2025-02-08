@@ -55,9 +55,13 @@ const menuItems = [
     { label: "Contact", icon: "ri-contacts-book-line", link: "#" },
 ];
 
-function Menu() {
+function Menu({ menuVisibility }) {
     return (
-        <nav className="navbar">
+        <nav
+            className={`navbar ${
+                menuVisibility ? "navbar__animation" : "navbar__hide"
+            }`}
+        >
             <ul>
                 {menuItems.map((item, index) => {
                     return <MenuItem key={index} item={item} />;
