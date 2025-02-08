@@ -1,3 +1,4 @@
+import Menu from "../Menu/Menu";
 import "./styles.css";
 function Heading() {
     return (
@@ -15,6 +16,7 @@ function Heading() {
 
                 <i className="ri-menu-line burger"></i>
                 <input type="checkbox" id="menu-bar" />
+                <Menu />
             </header>
         </>
     );

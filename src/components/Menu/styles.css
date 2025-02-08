@@ -1,0 +1,19 @@
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    padding: 1rem;
+}
+
+.navbar > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu__item {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

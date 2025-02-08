@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     padding: 1rem 1rem;
+    position: relative;
     color: var(--indigo-dye);
 }
 
