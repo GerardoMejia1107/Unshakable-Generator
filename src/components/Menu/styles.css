@@ -54,6 +54,7 @@
     }
 }
 
+/*Menu items and subitems styles*/
 .navbar > ul {
     display: flex;
     flex-direction: column;
@@ -63,6 +64,13 @@
 .menu__item {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--honolulu-blue);
+
+    min-height: 50px;
+}
+
+.menu__item:hover a {
+    cursor: pointer;
+    font-size: larger;
 }
 
 .navbar ul .menu__item:last-child {
@@ -73,6 +81,7 @@
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--indigo-dye);
+    transition: all 0.3s ease-in;
 }
 
 .dropdown {
