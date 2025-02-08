@@ -1,0 +1,38 @@
+@import url("../../styles/color-pallete.css");
+#hero__container {
+    padding: 1rem;
+}
+
+#hero__container > h2 {
+    color: var(--indigo-dye);
+    font-size: clamp(2.3rem, 6vw, 4rem);
+    text-align: center;
+    font-weight: 800;
+}
+
+#hero__container > p {
+    color: black;
+    font-size: clamp(1.1rem, 6vw, 1.5rem);
+    text-align: center;
+    font-weight: 400;
+
+    width: min(1000px, 80%);
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#hero__container .img__container {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin-top: 2rem;
+}
+
+#hero__container .img__container img {
+    width: min(400px, 80%);
+}

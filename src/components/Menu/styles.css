@@ -15,6 +15,9 @@
     padding: 1rem;
 
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.239);
+    z-index: 999 !important;
+
+    background-color: rgb(246, 251, 252);
 }
 
 /*Classes to control the animations*/
@@ -68,11 +71,6 @@
     min-height: 50px;
 }
 
-.menu__item:hover a {
-    cursor: pointer;
-    font-size: larger;
-}
-
 .navbar ul .menu__item:last-child {
     border-bottom: none;
 }
@@ -81,7 +79,6 @@
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--indigo-dye);
-    transition: all 0.3s ease-in;
 }
 
 .dropdown {

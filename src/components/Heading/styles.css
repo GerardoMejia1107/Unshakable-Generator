@@ -6,7 +6,10 @@
     align-items: center;
     padding: 1rem 1rem;
     position: relative;
+    z-index: 1;
     color: var(--indigo-dye);
+
+    background-color: rgb(246, 251, 252);
 }
 
 #header input[type="checkbox"] {
