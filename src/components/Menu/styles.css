@@ -1,6 +1,6 @@
 @import url("../../styles/color-pallete.css");
 .navbar {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     border-radius: 15px;
 
@@ -13,7 +13,8 @@
 
     display: none;
     padding: 1rem;
-    background-color: var(--indigo-dye);
+
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.239);
 }
 
 /*Classes to control the animations*/
@@ -61,7 +62,7 @@
 
 .menu__item {
     padding-bottom: 1rem;
-    border-bottom: 1px solid #edf6f949;
+    border-bottom: 1px solid var(--honolulu-blue);
 }
 
 .navbar ul .menu__item:last-child {
@@ -71,7 +72,7 @@
 .menu__item a {
     font-size: 1.15rem;
     font-weight: 600;
-    color: #edf6f9;
+    color: var(--indigo-dye);
 }
 
 .dropdown {
@@ -90,7 +91,7 @@
 }
 
 .navbar > ul > li:nth-child(3) .dropdown__item a div h4 {
-    color: var(--columbia-blue);
+    color: var(--marian-blue);
     font-size: 1.15rem;
 }
 
