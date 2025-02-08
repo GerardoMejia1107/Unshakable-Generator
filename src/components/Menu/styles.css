@@ -1,11 +1,13 @@
 @import url("../../styles/color-pallete.css");
 .navbar {
-    width: 92%;
+    width: 98%;
     margin: 0 auto;
     border-radius: 15px;
 
-    position: fixed;
-    top: 90px;
+    margin-top: 5px;
+
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
 
