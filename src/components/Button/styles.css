@@ -1,4 +1,6 @@
 @import url("../../styles/color-pallete.css");
+
+/**NOTE - MOBILE FIRST APPROACH*/
 .button {
     padding: 10px 20px;
     margin: 1rem auto;

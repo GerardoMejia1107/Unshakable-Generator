@@ -1,4 +1,6 @@
 @import url("../../styles/color-pallete.css");
+
+/**NOTE - MOBILE FIRST APPROACH*/
 #hero__container {
     padding: 1rem;
 }
@@ -20,4 +22,3 @@
     margin: 0 auto;
     margin-top: 1rem;
 }
-

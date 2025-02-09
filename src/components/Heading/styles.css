@@ -4,16 +4,14 @@
 #header {
     display: flex;
     align-items: center;
+
     padding: 1rem 1rem;
+
     position: relative;
     z-index: 1;
+
     color: var(--indigo-dye);
-
     background-color: rgb(246, 251, 252);
-}
-
-#header input[type="checkbox"] {
-    display: none;
 }
 
 #header i.burger {
@@ -32,6 +30,7 @@
 .website__logo__name .website__logo {
     width: min(50px, 50%);
 }
+
 .website__logo__name .website__name {
     font-weight: 700;
     font-size: 1.7rem;

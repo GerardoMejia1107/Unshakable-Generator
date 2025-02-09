@@ -1,3 +1,4 @@
+/**NOTE - MOBILE FIRST APPROACH*/
 #generator__section {
     padding: 1rem;
 }
@@ -42,9 +43,27 @@
     font-size: clamp(1.1rem, 6vw, 1.5rem);
 }
 
+.generator .input__generation p {
+    width: 80%;
+}
+
+.generator .input__generation i {
+    width: 20%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    color: var(--marian-blue);
+    font-weight: 600;
+}
+
+/*Styles for the range input*/
 .parameters__list {
     width: min(400px, 80%);
+
     margin: 0 auto;
+
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
@@ -55,6 +74,7 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+
     margin: 1.5rem auto;
 }
 
