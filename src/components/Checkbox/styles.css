@@ -1,0 +1,39 @@
+/*Input styles*/
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+
+    font-size: clamp(1rem, 6vw, 1.5rem);
+    font-weight: 500;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--marian-blue);
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-color: var(--marian-blue);
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "✓";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+}

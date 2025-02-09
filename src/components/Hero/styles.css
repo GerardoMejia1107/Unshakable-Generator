@@ -21,18 +21,3 @@
     margin-top: 1rem;
 }
 
-#hero__container .img__container {
-    height: auto;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 5px;
-    margin-top: 2rem;
-}
-
-#hero__container .img__container img {
-    width: min(400px, 80%);
-}

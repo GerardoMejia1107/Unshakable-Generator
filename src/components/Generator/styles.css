@@ -1,0 +1,68 @@
+#generator__section {
+    padding: 1rem;
+}
+
+/*Img styles*/
+#generator__section .generator__img__decoration {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin-top: 1.5rem;
+}
+
+#generator__section .generator__img__decoration img {
+    width: min(400px, 85%);
+}
+
+/*Styles for the input (shows the password generated)*/
+.generator {
+    margin-top: 2rem;
+}
+.generator .input__generation {
+    width: min(400px, 80%);
+    height: 2.5rem;
+
+    padding: 5px 20px;
+    margin: 0 auto;
+
+    border-radius: 25px;
+    border: 2px solid var(--blue-green);
+
+    box-shadow: 0 0 5px 1px var(--picton-blue) inset;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: clamp(1.1rem, 6vw, 1.5rem);
+}
+
+.parameters__list {
+    width: min(400px, 80%);
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.length__parameter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.length__parameter h3 {
+    font-size: clamp(1.1rem, 6vw, 1.5rem);
+    font-weight: 600;
+}
+
+input[type="range"] {
+    width: min(250px, 60%);
+}
