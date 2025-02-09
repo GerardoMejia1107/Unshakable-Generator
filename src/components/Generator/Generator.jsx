@@ -18,6 +18,7 @@ function Generator() {
                     <section className="generator">
                         <div className="input__generation">
                             <p></p>
+                            <i className="ri-loop-right-line"></i>
                         </div>
                         <Button buttonInfo={buttonsData.copy} />
                         <section className="parameters__container">
