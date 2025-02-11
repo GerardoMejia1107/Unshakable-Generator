@@ -1,0 +1,20 @@
+@import url("../styles/color-pallete.css");
+
+#features-section {
+    background-color: var(--mint-green);
+
+    padding: 5rem 1rem;
+    margin-top: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#features-section h2 {
+    color: var(--indigo-dye);
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    text-align: center;
+    font-weight: 800;
+}
