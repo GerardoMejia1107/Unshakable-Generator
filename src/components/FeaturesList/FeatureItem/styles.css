@@ -1,0 +1,40 @@
+@import url("../../../styles/color-pallete.css");
+/*card feature styels*/
+.feature__item {
+    background-color: rgb(246, 251, 252);
+
+    border-radius: 20px;
+    border: 2px solid var(--non-photo-blue);
+
+    width: min(400px, 85%);
+    height: 350px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature__item .description__feature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature__item .description__feature h3 {
+    color: var(--indigo-dye);
+    font-size: clamp(1rem, 6vw, 1.5rem);
+}
+
+.feature__item .description__feature p {
+    font-size: clamp(1.1rem, 4vw, 1.2rem);
+}
+
+/*Img icon styles*/
+.img__feature img {
+    width: 80px;
+}
