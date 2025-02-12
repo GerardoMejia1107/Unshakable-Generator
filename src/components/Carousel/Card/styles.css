@@ -1,0 +1,48 @@
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+/*Carousel cards style*/
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+/*Img styles*/
+.carousel :where(.picture__container, .card) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .picture__container {
+    background-color: var(--moonstone);
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.card .picture__container img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.card .user__info{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    text-align: center;
+
+}

@@ -1,6 +1,7 @@
 import "./styles.css";
 import {useEffect} from "react";
 import Card from "./Card/Card.jsx";
+import "./styles.css"
 import {itProfessionsArray, testimonialMessages} from "../../config/randomUsers.js";
 
 // eslint-disable-next-line react/prop-types
