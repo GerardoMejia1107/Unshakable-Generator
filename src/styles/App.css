@@ -22,7 +22,8 @@
 
 #testimonial__carousel__section {
     background-color: var(--icterine);
+    width: 100%;
+
     height: auto;
     padding: 5rem 1rem;
 }
-    

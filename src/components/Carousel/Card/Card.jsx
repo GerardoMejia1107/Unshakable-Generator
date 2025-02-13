@@ -22,11 +22,9 @@ function Card({ data, professions, messages }) {
             </div>
 
             <div className="user__info">
-                <p className="user__testimonial__message">
-                    <blockquote>{`"${
-                        messages[randomNumber(messages)]
-                    }"`}</blockquote>
-                </p>
+                <blockquote className="user__testimonial__message">{`"${
+                    messages[randomNumber(messages)]
+                }"`}</blockquote>
             </div>
         </li>
     );

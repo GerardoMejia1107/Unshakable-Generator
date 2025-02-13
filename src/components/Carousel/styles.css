@@ -4,11 +4,11 @@
 
 /*Carousel styles*/
 .wrapper .carousel {
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% / 3) - 10px);
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -17,7 +17,8 @@
 }
 
 .wrapper {
-    width: 100%;
+    width: min(85%, 1500px);
+    margin: 0 auto;
     position: relative;
 }
 
