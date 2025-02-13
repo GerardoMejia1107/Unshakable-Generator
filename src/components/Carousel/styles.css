@@ -1,3 +1,62 @@
 .carousel {
     margin: 2rem auto;
 }
+
+/*Carousel styles*/
+.wrapper .carousel {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+/******/
+/*Wrapper styles*/
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+/*Buttons*/
+.wrapper i {
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrapper i {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+.wrapper i:first-of-type {
+    left: 25px;
+}
+.wrapper i:last-of-type {
+    right: 25px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+/*!SECTION - Responsiveness*/
+@media screen and (width < 1000px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (width < 700px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}

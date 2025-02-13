@@ -3,7 +3,6 @@ import "./styles.css";
 import { randomNumber } from "../../../config/randomUsers.js";
 
 function Card({ data, professions, messages }) {
-    console.log(data);
     return (
         <li className="card">
             <div className="picture__container">
