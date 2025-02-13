@@ -6,13 +6,32 @@
 /*Carousel cards style*/
 .carousel .card {
     scroll-snap-align: start;
-    height: 342px;
+    height: auto;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 25px;
 
     flex-direction: column;
     padding-bottom: 15px;
     cursor: pointer;
+}
+
+.card .personal__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 250px;
+    width: 100%;
+}
+
+.card .personal__data .user__profession {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.card .personal__data .user__name {
+    font-weight: 600;
 }
 
 /*Img styles*/
@@ -37,16 +56,17 @@
     border: 4px solid white;
 }
 
-.card h3 {
+.card :where(h3, h4) {
     font-size: 1.3rem;
-
+    text-align: center;
     @media (width > 768px) {
         font-size: 1.4rem;
     }
 }
 
-.card .user__info :where(p, h4) {
+.card .user__info p {
     font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
 
     @media (width > 768px) {
         font-size: 1.2rem;
@@ -54,9 +74,8 @@
 }
 
 .card .user__info {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
+    height: 100px;
+    width: 80%;
+
     text-align: center;
 }
