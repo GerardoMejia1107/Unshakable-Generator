@@ -1,0 +1,81 @@
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+/*Carousel cards style*/
+.carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+
+    flex-direction: column;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.card .personal__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 250px;
+    width: 100%;
+}
+
+.card .personal__data .user__profession {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.card .personal__data .user__name {
+    font-weight: 600;
+}
+
+/*Img styles*/
+.carousel :where(.picture__container, .card) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .picture__container {
+    background-color: var(--indigo-dye);
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.card .picture__container img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.card :where(h3, h4) {
+    font-size: 1.3rem;
+    text-align: center;
+    @media (width > 768px) {
+        font-size: 1.4rem;
+    }
+}
+
+.card .user__info blockquote {
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+
+    @media (width > 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+.card .user__info {
+    height: 100px;
+    width: 80%;
+
+    text-align: center;
+}

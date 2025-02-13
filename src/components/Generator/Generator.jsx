@@ -10,7 +10,7 @@ function Generator() {
                 <section className="generaton__content">
                     <div className="generator__img__decoration">
                         <img
-                            src="../../../public/assets/images/hero-img-dark-grey.svg"
+                            src="../../../assets/images/hero-img-dark-grey.svg"
                             alt=""
                         />
                     </div>
