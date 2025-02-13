@@ -1,0 +1,13 @@
+.heading {
+    color: var(--indigo-dye);
+    text-align: center;
+    font-weight: 800;
+}
+
+.big__H {
+    font-size: clamp(3rem, 5vw, 4.4rem);
+}
+
+.medium__H {
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+}

@@ -8,6 +8,7 @@ import { featuresData } from "./constants/featuresData.js";
 import useFetch from "./hooks/useFetch.jsx";
 import { useEffect, useState, useMemo } from "react";
 import Carousel from "./components/Carousel/Carousel.jsx";
+import DynamicHeading from "./components/DynamicHeading/DynamicHeading.jsx";
 
 function App() {
     const url = useMemo(() => "https://randomuser.me/api/?results=5", []);
@@ -27,13 +28,23 @@ function App() {
             <Generator />
 
             <section id="features-section">
-                <h2>Why Choose Us?</h2>
+                <DynamicHeading headingType={"h2"}>
+                    Why Choose us?
+                </DynamicHeading>
                 <FeatureList featuresData={featuresData} />
             </section>
 
             <section id="testimonial__carousel__section">
-                <h2>Customer Experiences</h2>
+                <DynamicHeading headingType={"h2"}>
+                    Customer Experiences
+                </DynamicHeading>
                 <Carousel usersData={users} />
+            </section>
+
+            <section id="faqs__section">
+                <DynamicHeading headingType={"h2"}>
+                    Password generator FAQs
+                </DynamicHeading>
             </section>
         </>
     );
