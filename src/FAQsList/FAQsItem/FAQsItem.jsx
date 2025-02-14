@@ -20,7 +20,7 @@ function FAQsItem({ FAQ }) {
                     <i className="ri-subtract-line"></i>
                 )}
             </div>
-            <div className={`answer ${isExpanded ? "expand" : ""}`}>
+            <div className={`answer ${isExpanded ? "expand" : "collapse"}`}>
                 {<p>{FAQ.answer}</p>}
             </div>
         </li>

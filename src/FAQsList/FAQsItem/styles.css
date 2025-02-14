@@ -20,6 +20,8 @@
     width: 85%;
 
     font-size: clamp(1rem, 4vw, 1.2rem);
+
+    margin-bottom: 1rem;
 }
 
 .FAQs__item .question > i {
@@ -28,15 +30,40 @@
     color: rgb(104, 104, 104);
 }
 
-.FAQs__item .answer {
-    display: none;
-    padding: 1rem 0;
-}
-
 .FAQs__item .answer p {
     font-size: clamp(0.9rem, 4vw, 1rem);
+    line-height: 1.5;
 }
 
 .FAQs__item .expand {
     display: block;
+    height: auto;
+    animation: fadeIn 0.3s linear 0s 1 normal both;
+    pointer-events: auto;
+}
+
+.FAQs__item .collapse {
+    animation: fadeOut 0.3s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        max-height: 0;
+        overflow: hidden;
+    }
+    to {
+        max-height: 1000px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        max-height: 1000px;
+    }
+    to {
+        max-height: 0;
+        overflow-y: hidden;
+        display: none;
+    }
 }
