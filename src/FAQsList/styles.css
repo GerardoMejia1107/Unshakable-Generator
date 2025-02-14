@@ -8,4 +8,6 @@
     background-color: white;
 
     width: min(85%, 900px);
+    height: auto;
+    overflow-y: hidden;
 }
