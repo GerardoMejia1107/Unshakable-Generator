@@ -1,0 +1,42 @@
+.FAQs__item {
+    padding: 2rem 1rem;
+
+    border-bottom: 1px solid rgb(188, 185, 185);
+}
+
+.FAQs__item:last-child {
+    border-bottom: none;
+}
+
+.FAQs__item .question {
+    display: flex;
+    gap: 12px;
+
+    color: rgb(94, 87, 87);
+}
+
+.FAQs__item .question > h4 {
+    justify-content: flex-start;
+    width: 85%;
+
+    font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.FAQs__item .question > i {
+    justify-content: flex-end;
+    font-size: clamp(1.5rem, 4vw, 1.7rem);
+    color: rgb(104, 104, 104);
+}
+
+.FAQs__item .answer {
+    display: none;
+    padding: 1rem 0;
+}
+
+.FAQs__item .answer p {
+    font-size: clamp(0.9rem, 4vw, 1rem);
+}
+
+.FAQs__item .expand {
+    display: block;
+}

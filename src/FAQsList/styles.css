@@ -1,0 +1,11 @@
+.FAQs__list {
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    border: 1px solid rgb(188, 185, 185);
+    border-radius: 25px;
+
+    background-color: white;
+
+    width: min(85%, 900px);
+}
