@@ -1,6 +1,6 @@
 import "./styles.css";
-import { FAQsData } from "../constants/FAQsData";
-import FAQsItem from "./FAQsItem/FAQsItem";
+import { FAQsData } from "../../constants/FAQsData.js";
+import FAQsItem from "./FAQsItem/FAQsItem.jsx";
 function FAQsList() {
     return (
         <ul className="FAQs__list">

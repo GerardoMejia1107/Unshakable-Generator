@@ -9,7 +9,7 @@ import useFetch from "./hooks/useFetch.jsx";
 import { useEffect, useState, useMemo } from "react";
 import Carousel from "./components/Carousel/Carousel.jsx";
 import DynamicHeading from "./components/DynamicHeading/DynamicHeading.jsx";
-import FAQsList from "./FAQsList/FAQsList.jsx";
+import FAQsList from "./components/FAQsList/FAQsList.jsx";
 
 function App() {
     const url = useMemo(() => "https://randomuser.me/api/?results=5", []);
