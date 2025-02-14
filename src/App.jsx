@@ -9,6 +9,7 @@ import useFetch from "./hooks/useFetch.jsx";
 import { useEffect, useState, useMemo } from "react";
 import Carousel from "./components/Carousel/Carousel.jsx";
 import DynamicHeading from "./components/DynamicHeading/DynamicHeading.jsx";
+import FAQsList from "./FAQsList/FAQsList.jsx";
 
 function App() {
     const url = useMemo(() => "https://randomuser.me/api/?results=5", []);
@@ -45,6 +46,7 @@ function App() {
                 <DynamicHeading headingType={"h2"}>
                     Password generator FAQs
                 </DynamicHeading>
+                <FAQsList />
             </section>
         </>
     );

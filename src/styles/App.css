@@ -12,12 +12,17 @@
     align-items: center;
 }
 
-
-
 #testimonial__carousel__section {
     background-color: var(--icterine);
     width: 100%;
 
     height: auto;
+    padding: 5rem 1rem;
+}
+
+#faqs__section {
+    width: 100%;
+    background-color: var(--main-bg-color);
+
     padding: 5rem 1rem;
 }
