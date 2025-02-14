@@ -1,0 +1,73 @@
+.FAQs__item {
+    padding: 2rem 1rem;
+
+    border-bottom: 1px solid rgb(188, 185, 185);
+}
+
+.FAQs__item:last-child {
+    border-bottom: none;
+}
+
+.FAQs__item .question {
+    display: flex;
+    gap: 12px;
+
+    color: rgb(94, 87, 87);
+}
+
+.FAQs__item .question:hover {
+    cursor: pointer;
+}
+
+.FAQs__item .question > h4 {
+    justify-content: flex-start;
+    width: 85%;
+
+    font-size: clamp(1rem, 4vw, 1.2rem);
+
+    margin-bottom: 1rem;
+}
+
+.FAQs__item .question > i {
+    justify-content: flex-end;
+    font-size: clamp(1.5rem, 4vw, 1.7rem);
+    color: rgb(104, 104, 104);
+}
+
+.FAQs__item .answer p {
+    font-size: clamp(0.9rem, 4vw, 1rem);
+    line-height: 1.5;
+}
+
+.FAQs__item .expand {
+    display: block;
+    height: auto;
+    animation: fadeIn 0.3s linear 0s 1 normal both;
+    pointer-events: auto;
+}
+
+.FAQs__item .collapse {
+    animation: fadeOut 0.3s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        max-height: 0;
+        overflow: hidden;
+    }
+    to {
+        max-height: 1000px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        max-height: 1000px;
+    }
+    to {
+        max-height: 0;
+        overflow-y: hidden;
+        display: none;
+    }
+}

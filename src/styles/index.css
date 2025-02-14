@@ -14,7 +14,7 @@ html,
 body,
 #root {
     height: 100%;
-    background-color: rgb(246, 251, 252) /*  */;
+    background-color: var(--main-bg-color) /*  */;
 }
 
 li {
