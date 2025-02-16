@@ -10,6 +10,7 @@ import { useEffect, useState, useMemo } from "react";
 import Carousel from "./components/Carousel/Carousel.jsx";
 import DynamicHeading from "./components/DynamicHeading/DynamicHeading.jsx";
 import FAQsList from "./components/FAQsList/FAQsList.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
     const url = useMemo(() => "https://randomuser.me/api/?results=5", []);
@@ -48,6 +49,8 @@ function App() {
                 </DynamicHeading>
                 <FAQsList />
             </section>
+
+            <Footer />
         </>
     );
 }

@@ -9,7 +9,6 @@
     border-bottom: none;
 }
 
-
 /*Question block styles*/
 .FAQs__item .question {
     display: flex;
@@ -40,7 +39,6 @@
     display: block;
     transform-origin: center;
 
-
     height: max-content;
 }
 
@@ -51,7 +49,6 @@
 .FAQs__item .question i.collapse__animation {
     animation: rotationReverse 0.5s ease forwards;
 }
-
 
 /*Answer block styles*/
 .FAQs__item .answer {
@@ -80,11 +77,9 @@
     from {
         max-height: 0;
         overflow: hidden;
-
     }
     to {
         max-height: 1000px;
-
     }
 }
 
@@ -102,15 +97,12 @@
 @keyframes rotation {
     from {
         transform: rotate(0deg);
-
     }
     to {
         transform: rotate(45deg);
         color: #f77f7f;
     }
-
 }
-
 
 @keyframes rotationReverse {
     from {
