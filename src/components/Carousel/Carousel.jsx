@@ -8,9 +8,25 @@ import {
 
 // eslint-disable-next-line react/prop-types
 function Carousel({ usersData }) {
+    const carousel = document.querySelector(".carousel");
+
+    const firstCardWidth = carousel?.firstElementChild?.offsetWidth;
+
+    const stepLeft = () => {
+        carousel.scrollLeft -= firstCardWidth;
+    };
+
+    const stepRight = () => {
+        carousel.scrollLeft += firstCardWidth;
+    };
+
     return (
         <section className="wrapper">
-            <i id="left" className="ri-arrow-left-wide-fill"></i>
+            <i
+                id="left"
+                className="ri-arrow-left-wide-fill"
+                onClick={stepLeft}
+            ></i>
 
             <ul className="carousel">
                 {/* eslint-disable-next-line react/prop-types */}
@@ -26,7 +42,11 @@ function Carousel({ usersData }) {
                         );
                     })}
             </ul>
-            <i className="ri-arrow-right-wide-fill"></i>
+            <i
+                id="right"
+                className="ri-arrow-right-wide-fill"
+                onClick={stepRight}
+            ></i>
         </section>
     );
 }
