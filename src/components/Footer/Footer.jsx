@@ -49,6 +49,8 @@ const services = [
 ];
 
 function Footer() {
+    const date = new Date();
+
     return (
         <footer>
             <section className="footer__main__content">
@@ -76,8 +78,8 @@ function Footer() {
 
             <section className="copy__right">
                 <span>
-                    {/*   <i className="ri-copyright-line"></i>2025 Unshakable Inc.
-                    All rights reserved. */}
+                    <i className="ri-copyright-line"></i>
+                    {date.getFullYear()} Unshakable Inc. All rights reserved.
                 </span>
             </section>
         </footer>

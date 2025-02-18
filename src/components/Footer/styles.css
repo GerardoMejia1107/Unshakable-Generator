@@ -55,3 +55,11 @@ footer {
 .brand__services {
     margin-top: 3rem;
 }
+
+.copy__right span {
+    display: block;
+    margin-top: 2rem;
+
+    color: var(--mint-green);
+    font-weight: 500;
+}
