@@ -1,3 +1,4 @@
+@import url("../../../styles/animations.css");
 /*General component styles*/
 .FAQs__item {
     padding: 2rem 1rem;
@@ -8,7 +9,6 @@
 .FAQs__item:last-child {
     border-bottom: none;
 }
-
 
 /*Question block styles*/
 .FAQs__item .question {
@@ -40,7 +40,6 @@
     display: block;
     transform-origin: center;
 
-
     height: max-content;
 }
 
@@ -52,10 +51,11 @@
     animation: rotationReverse 0.5s ease forwards;
 }
 
-
 /*Answer block styles*/
-.FAQs__item .answer {
+.FAQs__item div.answer {
     width: min(90%, 1000px);
+    max-height: 0;
+    overflow: hidden;
 }
 
 .FAQs__item .answer p {
@@ -64,60 +64,13 @@
 }
 
 .FAQs__item div.expand {
-    display: block;
-    height: auto;
-    animation: fadeIn 0.5s ease-in-out 0s 1 normal both;
+    animation: slideDown 0.4s ease-out forwards;
     pointer-events: auto;
 }
 
 .FAQs__item div.collapse {
-    animation: fadeOut 0.3s ease-out forwards;
+    animation: slideUp 0.4s ease-out forwards;
     pointer-events: none;
 }
 
 /*Animation keyframes rules*/
-@keyframes fadeIn {
-    from {
-        max-height: 0;
-        overflow: hidden;
-
-    }
-    to {
-        max-height: 1000px;
-
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        max-height: 1000px;
-    }
-    to {
-        max-height: 0;
-        overflow-y: hidden;
-        visibility: hidden;
-    }
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-
-    }
-    to {
-        transform: rotate(45deg);
-        color: #f77f7f;
-    }
-
-}
-
-
-@keyframes rotationReverse {
-    from {
-        transform: rotate(45deg);
-        color: #f77f7f;
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}

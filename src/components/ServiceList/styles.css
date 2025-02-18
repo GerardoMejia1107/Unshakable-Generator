@@ -1,0 +1,8 @@
+.services__list {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: min(750px, 95%);
+    margin: 0 auto;
+}
