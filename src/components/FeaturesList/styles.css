@@ -5,5 +5,12 @@
     align-items: center;
     gap: 2rem;
 
+    width: min(85%, 1000px);
     margin: 2rem auto;
+}
+
+@media (width > 992px) {
+    #features__list {
+        flex-direction: row;
+    }
 }

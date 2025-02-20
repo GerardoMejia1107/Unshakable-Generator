@@ -121,7 +121,7 @@
 }
 
 /*Media queries*/
-@media (width >= 992px) {
+@media (width > 992px) {
     .navbar {
         box-shadow: none;
         border-radius: none;
@@ -173,7 +173,7 @@
     }
 }
 
-@media (width > 993px) and (width < 1200px) {
+@media (width > 992px) and (width < 1200px) {
     .navbar {
         margin: 0;
     }

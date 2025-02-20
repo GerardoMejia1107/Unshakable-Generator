@@ -6,7 +6,7 @@
     border-radius: 20px;
     border: 2px solid var(--non-photo-blue);
 
-    width: min(400px, 85%);
+    width: min(450px, 85%);
     height: 350px;
 
     padding: 30px;
