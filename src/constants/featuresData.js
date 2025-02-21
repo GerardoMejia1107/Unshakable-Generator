@@ -1,20 +1,20 @@
 export const featuresData = [
     {
-        title: "Password Customization",
+        title: "Customization",
         description:
-            "Adjust length and choose character types like uppercase, numbers, or special characters.",
+            "Modify length and select character types, including uppercase letters, numbers, and symbols.",
         img: "assets/icons/Personalizacion.png",
     },
     {
-        title: "Strength Evaluation",
+        title: "Evaluation",
         description:
-            "Evaluate the strength of your passwords and get recommendations to improve them.",
+            "Analyze password strength and receive personalized suggestions for improvement.",
         img: "assets/icons/Evaluacion.png",
     },
     {
-        title: "Probability Statistics",
+        title: "Statistics",
         description:
-            "Get statistics on the probability of your passwords being hacked.",
+            "View detailed insights on the likelihood of your passwords being compromised.",
         img: "assets/icons/Probabilidad.png",
     },
 ];
