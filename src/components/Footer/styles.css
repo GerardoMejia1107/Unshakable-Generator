@@ -56,10 +56,38 @@ footer {
     margin-top: 3rem;
 }
 
-.copy__right span {
-    display: block;
+.copy__right {
     margin-top: 2rem;
 
     color: var(--mint-green);
     font-weight: 500;
+}
+
+@media (width > 992px) {
+    .footer__main__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+
+        width: min(100%, 1200px);
+    }
+
+    .contact__info {
+        width: 30%;
+        gap: 5rem;
+    }
+
+    .brand__services {
+        margin: 0;
+    }
+
+    .copy__right {
+        margin-top: 3.5rem;
+    }
+
+    .social__media__list,
+    .brand__name {
+        justify-content: flex-start;
+    }
 }
