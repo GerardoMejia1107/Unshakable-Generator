@@ -1,8 +1,16 @@
 .services__list {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-direction: column;
 
     width: min(750px, 95%);
     margin: 0 auto;
+}
+
+@media (width > 992px) {
+    .services__list {
+        width: 100%;
+        gap: 6rem;
+        flex-direction: row;
+    }
 }

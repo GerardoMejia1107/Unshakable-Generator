@@ -59,7 +59,11 @@ function Menu({ menuVisibility }) {
     return (
         <nav
             className={`navbar ${
-                menuVisibility ? "navbar__animation" : "navbar__hide"
+                menuVisibility
+                    ? "navbar__animation"
+                    : window.innerWidth < 992
+                    ? "navbar__hide" 
+                    : ""
             }`}
         >
             <ul>

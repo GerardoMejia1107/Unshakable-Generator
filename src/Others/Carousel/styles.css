@@ -5,7 +5,7 @@
 /*Carousel styles*/
 .wrapper .carousel {
     width: 100%;
-    margin: 2rem auto;
+    margin: 2rem 0;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 10px);
@@ -61,12 +61,12 @@
 }
 
 /*!SECTION - Responsiveness*/
-@media screen and (width < 1000px) {
+@media screen and (width < 1200px) {
     .wrapper .carousel {
-        grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: calc((100% / 2) - 10px);
     }
 }
-@media screen and (width < 700px) {
+@media screen and (width < 992px) {
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }

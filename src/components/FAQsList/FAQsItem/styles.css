@@ -13,9 +13,12 @@
 /*Question block styles*/
 .FAQs__item .question {
     display: flex;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 1rem;
 
     color: rgb(94, 87, 87);
+
+    padding-right: 1rem;
 }
 
 .FAQs__item .question:hover {
@@ -26,7 +29,7 @@
     justify-content: flex-start;
     width: 85%;
 
-    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
 
     margin-bottom: 1rem;
 }
@@ -34,13 +37,12 @@
 /*Icon to expand/close answer*/
 .FAQs__item .question > i {
     justify-content: flex-end;
-    font-size: clamp(1.5rem, 4vw, 1.7rem);
+    font-size: clamp(1.5rem, 10vw, 2rem);
     color: rgb(104, 104, 104);
 
-    display: block;
+    display: flex;
+    align-items: center;
     transform-origin: center;
-
-    height: max-content;
 }
 
 .FAQs__item .question i.expand__animation {
@@ -59,7 +61,7 @@
 }
 
 .FAQs__item .answer p {
-    font-size: clamp(0.9rem, 4vw, 1rem);
+    font-size: clamp(1.1rem, 4vw, 1.2rem);
     line-height: 1.5;
 }
 
@@ -72,5 +74,3 @@
     animation: slideUp 0.4s ease-out forwards;
     pointer-events: none;
 }
-
-/*Animation keyframes rules*/

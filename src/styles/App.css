@@ -3,9 +3,6 @@
 #features-section {
     background-color: var(--mint-green);
 
-    padding: 5rem 1rem;
-    margin-top: 2.5rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,13 +14,17 @@
     width: 100%;
 
     height: auto;
-    padding: 5rem 1rem;
 }
 
 #faqs__section {
     width: 100%;
     height: auto;
     background-color: var(--main-bg-color);
+}
 
-    padding: 5rem 1rem;
+#generator__section,
+#features-section,
+#testimonial__carousel__section,
+#faqs__section {
+    padding: 4rem 3rem;
 }

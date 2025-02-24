@@ -4,6 +4,7 @@
     margin: 0 auto;
     border-radius: 15px;
 
+    display: none;
     margin-top: 5px;
 
     position: absolute;
@@ -11,13 +12,20 @@
     left: 0;
     right: 0;
 
-    display: none;
     padding: 1rem;
 
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.239);
     z-index: 999 !important;
 
     background-color: rgb(246, 251, 252);
+
+    @media (width >= 992px) {
+        width: 70%;
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 }
 
 /*Classes to control the animations*/
@@ -28,7 +36,9 @@
 }
 
 .navbar__hide {
-    animation: fadeOut 0.2s linear 0s 1 normal both;
+    @media (width < 992px) {
+        animation: fadeOut 0.2s linear 0s 1 normal both;
+    }
     pointer-events: none;
 }
 
@@ -108,4 +118,63 @@
 .navbar > ul > li:nth-child(4) .dropdown__item a div {
     display: flex;
     gap: 6px;
+}
+
+/*Media queries*/
+@media (width > 992px) {
+    .navbar {
+        box-shadow: none;
+        border-radius: none;
+        width: min(100%, 800px);
+
+        margin: 0;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul li.menu__item {
+        padding: 0;
+        border: none;
+        min-height: max-content;
+
+        position: relative;
+    }
+
+    li.menu__item .dropdown {
+        flex-direction: column;
+        position: absolute;
+
+        padding: 1rem;
+
+        border-radius: 5px 5px 15px 15px;
+
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.186);
+
+        top: 0;
+        left: 0;
+
+        width: max-content;
+
+        background-color: var(--main-bg-color);
+    }
+
+    li.menu__item:nth-child(4) .dropdown li a div {
+        width: 100%;
+    }
+
+    .navbar ul li.menu__item a {
+        flex-direction: row-reverse;
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+@media (width > 992px) and (width < 1200px) {
+    .navbar {
+        margin: 0;
+    }
 }

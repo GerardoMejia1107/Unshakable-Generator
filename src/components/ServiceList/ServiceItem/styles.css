@@ -11,7 +11,7 @@ li.service__item > div {
 }
 
 li.service__item p {
-    width: 90%;
+    width: 100%;
 }
 
 li.service__item i {
@@ -54,4 +54,26 @@ li.service__item i.collapse__content {
 
 .service__item ul.show {
     animation: slideDown 0.4s ease-out forwards;
+}
+
+@media (width > 992px) {
+    li.service__item p {
+        width: max-content;
+    }
+
+    li.service__item i {
+        display: none;
+    }
+
+    .service__item ul.hide {
+        animation: slideDown 0.4s ease-out forwards;
+    }
+
+    li.service__item > div {
+        border: none;
+    }
+
+    .sub__services__list:nth-child(2) li {
+        width: max-content;
+    }
 }

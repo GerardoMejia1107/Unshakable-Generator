@@ -4,6 +4,7 @@
 #header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     padding: 1rem 1rem;
 
@@ -12,10 +13,19 @@
 
     color: var(--indigo-dye);
     background-color: rgb(246, 251, 252);
+
+    @media (width >= 992px) {
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid rgba(27, 73, 101, 0.683);
+    }
 }
 
 #header i.burger {
     font-size: 2.2rem;
+
+    @media (width >= 992px) {
+        display: none;
+    }
 }
 
 /*Header > section styles*/
@@ -25,6 +35,10 @@
 
     justify-content: flex-start;
     align-items: center;
+
+    @media (width >= 992px) {
+        width: 30%;
+    }
 }
 
 .website__logo__name .website__logo {
