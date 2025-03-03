@@ -1,9 +1,12 @@
+import { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import { buttonsData } from "../../constants/buttonsData";
 import { parametersData } from "../../constants/parametersData";
 import "./styles.css";
 import Checkbox from "../Checkbox/Checkbox";
 function Generator() {
+    const [range, setRange] = useState(8);
+
     return (
         <>
             <main id="generator__section">
@@ -24,7 +27,8 @@ function Generator() {
                         <section className="parameters__container">
                             <div className="length__parameter">
                                 <h3>
-                                    Length: <span id="length__value">10</span>
+                                    Length:{" "}
+                                    <span id="length__value">{range}</span>
                                 </h3>
                                 <input
                                     type="range"
@@ -32,6 +36,8 @@ function Generator() {
                                     id="range"
                                     max={20}
                                     min={8}
+                                    value={range}
+                                    onChange={(e) => setRange(e.target.value)}
                                 />
                             </div>
                             <div className="font__parameters">
