@@ -2,19 +2,17 @@
 import "./styles.css";
 import { useState } from "react";
 
-function Checkbox({ elementData }) {
-    const [status, setStatus] = useState(false);
-
+function Checkbox({ data, checked, onChange }) {
     return (
         <li>
             <input
                 type="checkbox"
-                name={elementData.name}
-                id={elementData.name}
-                checked={status}
-                onChange={() => setStatus(!status)}
+                name={data.name}
+                id={data.name}
+                checked={checked}
+                onChange={onChange}
             />
-            <label htmlFor={elementData.name}>{elementData.text}</label>
+            <label htmlFor={data.name}>{data.label}</label>
         </li>
     );
 }

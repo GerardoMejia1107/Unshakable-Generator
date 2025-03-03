@@ -36,13 +36,6 @@ function App() {
                 <FeatureList featuresData={featuresData} />
             </section>
 
-           {/*  <section id="testimonial__carousel__section">
-                <DynamicHeading headingType={"h2"}>
-                    Customer Experiences
-                </DynamicHeading>
-                <Carousel usersData={users} />
-            </section> */}
-
             <section id="faqs__section">
                 <DynamicHeading headingType={"h2"}>
                     Password generator FAQs

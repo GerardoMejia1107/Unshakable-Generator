@@ -1,22 +1,22 @@
-export const parametersData = [
+export const parameters = [
     {
         name: "uppercase",
-        text: "ABC",
+        label: "ABC",
         lot: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     },
     {
         name: "lowercase",
-        text: "abc",
+        label: "abc",
         lot: "abcdefghijklmnopqrstuvwxyz",
     },
     {
         name: "numbers",
-        text: "123",
+        label: "123",
         lot: "0123456789",
     },
     {
         name: "symbols",
-        text: "!@#",
+        label: "!@#",
         lot: "!@#$%^&*(){}[]=<>/,.",
     },
 ];
