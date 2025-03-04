@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import "./styles.css";
-import { useState } from "react";
 
 function Checkbox({ data, checked, onChange }) {
     return (

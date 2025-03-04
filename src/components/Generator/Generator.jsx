@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Button from "../Button/Button";
 import { buttonsData } from "../../constants/buttonsData";
 import { parameters } from "../../constants/parametersData";
+import { random } from "../../utils/random";
 import "./styles.css";
 import Checkbox from "../Checkbox/Checkbox";
 function Generator() {
     const [pool, setPool] = useState([]);
     const [range, setRange] = useState(8); //Use state for range
+    const [password, setPassword] = useState(""); //Use state for password
 
     //User state to manage the checkboxes of parameters the user wants to include to generate its password
     const [selectedOptions, setSelectedOptions] = useState({
@@ -16,14 +18,7 @@ function Generator() {
         symbols: false,
     });
 
-    const handleCheckboxChange = (name) => {
-        setSelectedOptions((prev) => ({
-            ...prev, // the rest of options remain the same
-            [name]: !prev[name], //name -> specific checkbox option being changed
-        }));
-    };
-
-    useEffect(() => {
+    const updatePool = useCallback(() => {
         const activeOptions = Object.entries(selectedOptions)
             .filter(([key, value]) => value)
             .map(([key]) => key);
@@ -35,6 +30,29 @@ function Generator() {
 
         setPool(interval);
     }, [selectedOptions]);
+
+    const generatePassword = useCallback(() => {
+        if (pool.length === 0) {
+            setPassword("");
+        } else {
+            setPassword(random(pool, range));
+        }
+    }, [pool, range]);
+
+    useEffect(() => {
+        updatePool();
+    }, [updatePool]);
+
+    useEffect(() => {
+        generatePassword();
+    }, [generatePassword]);
+
+    const handleCheckboxChange = (name) => {
+        setSelectedOptions((prev) => ({
+            ...prev, // the rest of options remain the same
+            [name]: !prev[name], //name -> specific checkbox option being changed
+        }));
+    };
 
     return (
         <main id="generator__section">
@@ -48,7 +66,7 @@ function Generator() {
 
                 <section className="generator">
                     <div className="input__generation">
-                        <p></p>
+                        <p>{password ? password : ""}</p>
                         <i className="ri-loop-right-line"></i>
                     </div>
                     <Button buttonInfo={buttonsData.copy} />
