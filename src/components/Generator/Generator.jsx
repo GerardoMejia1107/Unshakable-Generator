@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
-import Button from "../Button/Button";
 import { buttonsData } from "../../constants/buttonsData";
 import { parameters } from "../../constants/parametersData";
 import { random } from "../../utils/random";
 import "./styles.css";
 import Checkbox from "../Checkbox/Checkbox";
+import CopyToClipboardButton from "../CopyToClipboard/CopyToClipboard";
 function Generator() {
     const [pool, setPool] = useState([]);
     const [range, setRange] = useState(8); //Use state for range
@@ -67,9 +67,13 @@ function Generator() {
                 <section className="generator">
                     <div className="input__generation">
                         <p>{password ? password : ""}</p>
-                        <i className="ri-loop-right-line"></i>
+                        <i
+                            className="ri-loop-right-line"
+                            onClick={generatePassword}
+                        ></i>
                     </div>
-                    <Button buttonInfo={buttonsData.copy} />
+
+                    <CopyToClipboardButton textToCopy={password} />
 
                     <section className="parameters__container">
                         <div className="length__parameter">

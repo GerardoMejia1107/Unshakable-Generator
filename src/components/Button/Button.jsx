@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import "./styles.css";
-function Button({ buttonInfo, action }) {
+function Button({ buttonInfo, action, children }) {
     return (
         <button className="button" onClick={action}>
-            {buttonInfo.text}
+            {children ? children : buttonInfo.text}
         </button>
     );
 }
